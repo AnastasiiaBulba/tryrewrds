@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Permissions-Policy" content="unload=()" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' https://maps.googleapis.com https://maps.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com; style-src 'self' 'unsafe-inline' https://maps.googleapis.com; img-src 'self' data: https:; frame-src https://www.google.com;"
+    />
+    <title>tryrewrds.com – Contact</title>
+    <meta
+      name="description"
+      content="Contact the Bridge Race team for support, feedback, or business inquiries. Get in touch with our gaming experts in Regina, Canada."
+    />
+    <meta
+      name="keywords"
+      content="Bridge Race, Contact, Support, Gaming, Canada, Regina"
+    />
+    <link rel="icon" type="image/x-icon" href="./race_painting/favicon.jpg" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/bridge-contacts.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main>
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p class="subtitle">Get in touch with the Bridge Race team</p>
+
+        <div class="contact-content">
+          <!-- Contact Information -->
+          <section class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="info-grid">
+              <div class="info-item">
+                <div class="info-icon">📧</div>
+                <div class="info-content">
+                  <h3>Email</h3>
+                  <p>contact@tryrewrds.com</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">📞</div>
+                <div class="info-content">
+                  <h3>Phone</h3>
+                  <p>+1 (324) 404-5678</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-content">
+                  <h3>Location</h3>
+                  <p>624 Main Street, Regina, SK S4P 1A1, Canada</p>
+                  <p>Located in the heart of Saskatchewan</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Map Section -->
+          <section class="map-section">
+            <h2>Our Location</h2>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=624+Main+Street,Regina,SK,Canada&language=en"
+                width="100%"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <!-- Contact Form -->
+          <section class="contact-form">
+            <h2>Send us a Message</h2>
+            <form id="contact-form" onsubmit="handleSubmit(event)">
+              <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required />
+                <span class="error-message" id="name-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required />
+                <span class="error-message" id="phone-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+                <span class="error-message" id="message-error"></span>
+              </div>
+
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div id="success-message" class="success-message hidden">
+              <p>Thank you! We will contact you shortly.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+      <div class="cookie-content">
+        <p>
+          We use cookies to enhance your gaming experience. By continuing to use
+          this site, you agree to our use of cookies.
+        </p>
+        <button id="accept-cookies" class="cookie-button">Accept</button>
+      </div>
+    </div>
+
+    <script src="./js/builder.js"></script>
+    <script src="./js/cookie-banner.js"></script>
+    <script src="./js/bridge-contacts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,524 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 80vh;
+  background: url("../race_painting/hero.jpg") center/cover no-repeat;
+  padding: var(--spacing-xl) 0;
+  gap: var(--spacing-xl);
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  animation: overlayPulse 3s ease-in-out infinite;
+}
+
+@keyframes overlayPulse {
+  0%,
+  100% {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  50% {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+  text-align: right;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-lg);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.hero-image {
+  display: none;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+  transition: var(--transition);
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+  padding: var(--spacing-xxl) 0;
+  background: var(--background-white);
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  justify-content: center;
+}
+
+.feature-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background: var(--background-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.feature-card h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* How to Play Section */
+.how-to-play {
+  padding: var(--spacing-xxl) 0;
+  background: linear-gradient(135deg, #2c5aa0, #f39c12);
+}
+
+.how-to-content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.how-to-text {
+  flex: 1;
+}
+
+.how-to-text h2 {
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+  color: white;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.instruction-item {
+  background: var(--background-white);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  transition: var(--transition);
+}
+
+.instruction-item:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-medium);
+}
+
+.instruction-item h3 {
+  color: var(--secondary-color);
+  margin-bottom: var(--spacing-xs);
+}
+
+.how-to-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.how-to-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Game Section */
+.game-section {
+  padding: var(--spacing-xxl) 0;
+  background: var(--background-white);
+}
+
+.game-section h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-light);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-light);
+  position: relative;
+  min-height: 650px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: var(--spacing-sm);
+}
+
+.fullscreen-btn {
+  background: linear-gradient(135deg, #2c5aa0, #f39c12);
+  color: white;
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  box-shadow: var(--shadow-light);
+}
+
+.fullscreen-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+  background: linear-gradient(135deg, #1e3a5f, #d68910);
+}
+
+.fullscreen-icon {
+  font-size: 1.1rem;
+}
+
+.game-container iframe {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+  max-width: 100%;
+  width: 800px;
+  height: 600px;
+  transition: var(--transition);
+}
+
+.game-container iframe:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-heavy);
+}
+
+/* Game Error Handling */
+.game-error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
+  z-index: 10;
+}
+
+/* Game Loading State */
+.game-container::before {
+  content: "Loading game...";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-light);
+  font-size: 1.1rem;
+  z-index: 5;
+  opacity: 0.7;
+}
+
+.game-container iframe:not([src=""]) + .game-container::before {
+  display: none;
+}
+
+/* Game Modes Section */
+.drawing-tools {
+  padding: var(--spacing-xxl) 0;
+  background: linear-gradient(135deg, #2c5aa0, #f39c12);
+}
+
+.drawing-tools h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  color: white;
+}
+
+.tools-content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.tools-text {
+  flex: 1;
+}
+
+.tools-text p {
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-md);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tools-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tools-text li {
+  background: var(--background-white);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  transition: var(--transition);
+  margin-bottom: var(--spacing-md);
+}
+
+.tools-text li:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-medium);
+}
+
+.tools-text li:last-child {
+  margin-bottom: 0;
+}
+
+.tools-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.tools-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+  transition: var(--transition);
+}
+
+.tools-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Reviews Section */
+.reviews {
+  padding: var(--spacing-xxl) 0;
+  background: var(--background-white);
+}
+
+.reviews h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: var(--background-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  transition: var(--transition);
+  animation: cardFloat 3s ease-in-out infinite;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+}
+
+@keyframes cardFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.review-author {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.review-text {
+  color: var(--text-light);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .game-container {
+    max-width: 95%;
+    padding: var(--spacing-md);
+  }
+
+  .game-container iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 500px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-lg) 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .how-to-content {
+    flex-direction: column;
+  }
+
+  .tools-content {
+    flex-direction: column;
+  }
+
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    max-width: 100%;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+
+  .review-card {
+    margin: 0 var(--spacing-sm);
+  }
+
+  .game-container {
+    min-height: 450px;
+    padding: var(--spacing-sm);
+  }
+
+  .game-container iframe {
+    width: 100%;
+    height: 450px;
+  }
+
+  .fullscreen-btn {
+    font-size: 0.8rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .game-container {
+    min-height: 400px;
+    padding: var(--spacing-xs);
+  }
+
+  .game-container iframe {
+    height: 400px;
+  }
+
+  .fullscreen-btn {
+    font-size: 0.7rem;
+    padding: var(--spacing-xs);
+  }
+
+  .fullscreen-icon {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .game-container {
+    min-height: 350px;
+  }
+
+  .game-container iframe {
+    height: 350px;
+  }
+
+  .feature-card,
+  .review-card {
+    padding: var(--spacing-sm);
+  }
+
+  .fullscreen-btn {
+    font-size: 0.6rem;
+  }
+}

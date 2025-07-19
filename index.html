@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Permissions-Policy" content="unload=()" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' https://html5.gamemonetize.co https://gamemonetize.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://html5.gamemonetize.co https://gamemonetize.com https://imasdk.googleapis.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; frame-src https://html5.gamemonetize.co https://gamemonetize.com;"
+    />
+    <title>tryrewrds.com – Bridge Race Game</title>
+    <meta
+      name="description"
+      content="Do you want to be a champion? Try this game Bridge Race that combines collecting and racing! You need to collect your colored blocks to build the stairs to the next floor, not only to collect them quickly but also to prevent your opponents from encroach on your stairs. You can't win until you get to the last level. Come and compete together!"
+    />
+    <meta
+      name="keywords"
+      content="3D, Block, Boy, Bridge, Casual, Collecting, Kid, Puzzle, Race, Relaxation"
+    />
+    <link rel="icon" type="image/x-icon" href="./race_painting/favicon.jpg" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Bridge Race</h1>
+          <p>
+            Become a champion in this exciting bridge building and racing game!
+            Collect colored blocks, build stairs to reach higher levels, and
+            compete against opponents in this thrilling 3D adventure. Can you
+            reach the top and become the ultimate bridge master?
+          </p>
+          <button class="cta-button" onclick="scrollToGame()">Play Now</button>
+        </div>
+        <div class="hero-image">
+          <img src="./race_painting/hero.jpg" alt="Bridge Race Game" />
+        </div>
+      </section>
+
+      <!-- Game Features Section -->
+      <section class="features">
+        <div class="container">
+          <h2>Game Features</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">🏗️</div>
+              <h3>Bridge Building</h3>
+              <p>
+                Collect colored blocks and strategically build bridges to reach
+                higher levels and outmaneuver your opponents.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🏃</div>
+              <h3>Racing Action</h3>
+              <p>
+                Compete in real-time races against other players while building
+                your path to victory.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🎯</div>
+              <h3>Strategic Gameplay</h3>
+              <p>
+                Plan your moves carefully - collect blocks quickly while
+                preventing opponents from using your bridges.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🏆</div>
+              <h3>Champion Challenge</h3>
+              <p>
+                Reach the final level to become the ultimate bridge race
+                champion and prove your skills.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How to Play Section -->
+      <section class="how-to-play">
+        <div class="container">
+          <div class="how-to-content">
+            <div class="how-to-text">
+              <h2>How to Play</h2>
+              <div class="instructions">
+                <div class="instruction-item">
+                  <h3>🎮 Controls</h3>
+                  <p>
+                    Use arrow keys or WASD to move your character. Collect
+                    blocks of your color and build bridges to reach higher
+                    levels.
+                  </p>
+                </div>
+                <div class="instruction-item">
+                  <h3>🎯 Objectives</h3>
+                  <p>
+                    Collect your colored blocks to build stairs to the next
+                    floor. Prevent opponents from using your bridges while
+                    racing to the top.
+                  </p>
+                </div>
+                <div class="instruction-item">
+                  <h3>🏆 Tips</h3>
+                  <p>
+                    Plan your route strategically. Look for the fastest path
+                    while blocking opponents. Don't let them use your bridges!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="how-to-image">
+              <img
+                src="./race_painting/section_new1.jpg"
+                alt="How to play Bridge Race"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Game Section -->
+      <section class="game-section">
+        <div class="container">
+          <h2>Play Bridge Race</h2>
+          <div class="game-container">
+            <div class="game-controls">
+              <button class="fullscreen-btn" onclick="toggleFullscreen()">
+                <span class="fullscreen-icon">⛶</span>
+                Fullscreen
+              </button>
+            </div>
+            <iframe
+              src="https://html5.gamemonetize.co/rex0qifhxf6n3jluvsgqkr84t7rp9260/"
+              width="800"
+              height="600"
+              scrolling="none"
+              frameborder="0"
+              allowfullscreen
+              sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-presentation"
+              loading="lazy"
+              id="game-iframe"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Game Modes Section -->
+      <section class="drawing-tools">
+        <div class="container">
+          <div class="tools-content">
+            <div class="tools-text">
+              <h2>Multiple Game Modes</h2>
+              <p>
+                Experience different challenges and environments in Bridge Race.
+                Each mode offers unique gameplay elements:
+              </p>
+              <ul>
+                <li>
+                  <strong>Classic Mode:</strong> Race against AI opponents in
+                  traditional bridge building challenges
+                </li>
+                <li>
+                  <strong>Multiplayer Mode:</strong> Compete against real
+                  players worldwide
+                </li>
+                <li>
+                  <strong>Time Trial:</strong> Beat the clock while building
+                  bridges efficiently
+                </li>
+                <li>
+                  <strong>Championship:</strong> Participate in tournaments to
+                  become the ultimate champion
+                </li>
+              </ul>
+            </div>
+            <div class="tools-image">
+              <img
+                src="./race_painting/section_new2.jpg"
+                alt="Multiple game modes"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews Section -->
+      <section class="reviews">
+        <div class="container">
+          <h2>Player Reviews</h2>
+          <div class="reviews-grid" id="reviews-container">
+            <!-- Reviews will be loaded from JSON -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+      <div class="cookie-content">
+        <p>
+          We use cookies to enhance your gaming experience. By continuing to use
+          this site, you agree to our use of cookies.
+        </p>
+        <button id="accept-cookies" class="cookie-button">Accept</button>
+      </div>
+    </div>
+
+    <script src="./js/builder.js"></script>
+    <script src="./js/cookie-banner.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

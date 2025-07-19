@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Permissions-Policy" content="unload=()" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' https://html5.gamemonetize.co https://gamemonetize.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://html5.gamemonetize.co https://gamemonetize.com https://imasdk.googleapis.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; frame-src https://html5.gamemonetize.co https://gamemonetize.com;"
+    />
+    <title>tryrewrds.com – Bridge Race News</title>
+    <meta
+      name="description"
+      content="Stay updated with the latest Bridge Race news, updates, and championship results. Get the latest information about new features, tournaments, and community highlights."
+    />
+    <meta
+      name="keywords"
+      content="Bridge Race, Game Updates, Championship, Racing, Bridge Building, News"
+    />
+    <link rel="icon" type="image/x-icon" href="./race_painting/favicon.jpg" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/bridge-news.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main>
+      <div class="container">
+        <h1>Bridge Race News</h1>
+        <p class="subtitle">
+          Stay updated with the latest bridge building championships and racing
+          events
+        </p>
+
+        <!-- Game Updates Section -->
+        <section class="news-section">
+          <h2>Game Updates</h2>
+          <div class="news-grid" id="updates-container">
+            <!-- Updates will be loaded from JSON -->
+          </div>
+        </section>
+
+        <!-- Championship News Section -->
+        <section class="news-section">
+          <h2>Championship News</h2>
+          <div class="news-grid" id="diaries-container">
+            <!-- Diaries will be loaded from JSON -->
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+      <div class="cookie-content">
+        <p>
+          We use cookies to enhance your gaming experience. By continuing to use
+          this site, you agree to our use of cookies.
+        </p>
+        <button id="accept-cookies" class="cookie-button">Accept</button>
+      </div>
+    </div>
+
+    <script src="./js/builder.js"></script>
+    <script src="./js/cookie-banner.js"></script>
+    <script src="./js/bridge-news.js"></script>
+  </body>
+</html>
